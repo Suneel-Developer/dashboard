@@ -84,8 +84,8 @@ const Step01: React.FC<Account> = ({ onNext }) => {
         </button>
 
         <div className="flex gap-2 mt-4 text-sm text-dark_text">
-          <p className="text-sm">Already have an account? </p>
-          <Link href="/login" className="text-secondary font-medium text-sm">
+          <p className="text-xs md:text-sm">Already have an account? </p>
+          <Link href="/login" className="text-secondary font-medium text-xs md:text-sm">
             Sign in instead
           </Link>
         </div>

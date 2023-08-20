@@ -38,16 +38,17 @@ const Signup: React.FC = () => {
   };
 
   return (
-    <section className="flex justify-start h-screen bg-[url('/assets/login.webp')] bg-cover	bg-no-repeat bg-center lg:bg-none">
+    <section className="flex justify-center  h-screen bg-[url('/assets/login.webp')] bg-cover	bg-no-repeat bg-center lg:bg-none">
       <div className="w-0 lg:w-2/5 h-auto relative">
         <Image src="/assets/account.webp" alt="Account Image" layout="fill" />
       </div>
 
-      <div className="w-11/12 mt-5	lg:w-3/5 flex justify-start p-10 flex-col bg-white">
+      <div className="w-11/12 flex justify-center h-max lg:h-full m-auto lg:m-0	 lg:justify-start p-5 lg:p-10 flex-col bg-white">
         <div className="flex justify-between flex-row w-100 items-center mb-4">
+          
           <div className="flex gap-2 items-center cursor-pointer ">
             <button
-              className={`flex items-center justify-center border w-12 h-12 rounded-lg ${
+              className={`flex items-center justify-center border w-6 h-6 lg:w-12 lg:h-12 rounded lg:rounded-lg ${
                 currentStep === Steps.Account ||
                 completedSteps.has(Steps.Account)
                   ? "bg-secondary text-white"
@@ -55,18 +56,18 @@ const Signup: React.FC = () => {
               }`}
               disabled={currentStep === Steps.Account}
             >
-              <RiHome6Line className=" text-2xl " />
+              <RiHome6Line className="text-sm lg:text-2xl" />
             </button>
             <div>
-              <h3 className="font-bold text-primary text-md">Account</h3>
-              <p className=" font-normal text-text text-sm">Create Account</p>
+              <h3 className="font-bold text-primary text-[7px] lg:text-sm">Account</h3>
+              <p className=" font-normal text-text text-[6px] lg:text-xs">Create Account</p>
             </div>
           </div>
 
           <div className="flex gap-2 items-center cursor-pointer ">
-            <BiChevronRight className="text-2xl text-text " />
+            <BiChevronRight className="text-md lg:text-2xl text-text " />
             <button
-              className={`flex items-center justify-center border w-12 h-12 rounded-lg ${
+              className={`flex items-center justify-center border w-6 h-6 lg:w-12 lg:h-12 rounded lg:rounded-lg ${
                 currentStep === Steps.Verification ||
                 completedSteps.has(Steps.Verification)
                   ? "bg-secondary text-white"
@@ -74,20 +75,20 @@ const Signup: React.FC = () => {
               }`}
               disabled={currentStep === Steps.Verification}
             >
-              <AiOutlineMail className=" text-2xl " />
+              <AiOutlineMail className="text-sm lg:text-2xl" />
             </button>
             <div>
-              <h3 className="font-bold text-primary text-md">Verification</h3>
-              <p className=" font-normal text-text text-sm">
+              <h3 className="font-bold text-primary text-[7px] lg:text-sm">Verification</h3>
+              <p className=" font-normal text-text text-[6px] lg:text-xs">
                 Email Verification
               </p>
             </div>
           </div>
 
           <div className="flex gap-2 items-center cursor-pointer ">
-          <BiChevronRight className="text-2xl text-text " />
+          <BiChevronRight className="text-md lg:text-2xl text-text " />
             <button
-              className={`flex items-center justify-center border w-12 h-12 rounded-lg ${
+              className={`flex items-center justify-center border w-6 h-6 lg:w-12 lg:h-12 rounded lg:rounded-lg ${
                 currentStep === Steps.Personal ||
                 completedSteps.has(Steps.Personal)
                   ? "bg-secondary text-white"
@@ -95,20 +96,20 @@ const Signup: React.FC = () => {
               }`}
               disabled={currentStep === Steps.Personal}
             >
-              <FiUsers className=" text-2xl " />
+              <FiUsers className="text-sm lg:text-2xl" />
             </button>
             <div>
-              <h3 className="font-bold text-primary text-md">Personal</h3>
-              <p className=" font-normal text-text text-sm">
+              <h3 className="font-bold text-primary text-[7px] lg:text-sm">Personal</h3>
+              <p className=" font-normal text-text text-[6px] lg:text-xs">
                 Enter Information
               </p>
             </div>
           </div>
 
           <div className="flex gap-2 items-center cursor-pointer ">
-          <BiChevronRight className="text-2xl text-text " />
+          <BiChevronRight className="text-md lg:text-2xl text-text " />
             <button
-              className={`flex items-center justify-center border w-12 h-12 rounded-lg ${
+              className={`flex items-center justify-center border w-6 h-6 lg:w-12 lg:h-12 rounded lg:rounded-lg ${
                 currentStep === Steps.Billing ||
                 completedSteps.has(Steps.Billing)
                   ? "bg-secondary text-white"
@@ -116,11 +117,11 @@ const Signup: React.FC = () => {
               }`}
               disabled={currentStep === Steps.Billing}
             >
-              <CgFileDocument className="text-2xl" />
+              <CgFileDocument className="text-sm lg:text-2xl" />
             </button>
             <div>
-              <h3 className="font-bold text-primary text-md">Billing</h3>
-              <p className=" font-normal text-text text-sm">Payment Details</p>
+              <h3 className="font-bold text-primary text-[7px] lg:text-sm">Billing</h3>
+              <p className=" font-normal text-text text-[6px] lg:text-xs">Payment Details</p>
             </div>
           </div>
         </div>

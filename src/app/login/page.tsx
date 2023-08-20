@@ -11,8 +11,8 @@ const Login = () => {
       </div>
 
       <div className="w-full lg:w-1/2 flex justify-center items-center">
-        <div className="lg:p-6 py-20 px-10 md:w-3/5 w-11/12 bg-white">
-          <h1 className="text-2xl font-semibold mb-4">
+        <div className="p-4 md:p-6 md:w-3/5 w-11/12 bg-white">
+          <h1 className="text-lg md:text-2xl font-semibold mb-4">
             Welcome to Octopus! 👋
           </h1>
           <p className="text-text font-normal text-sm mb-6">
@@ -77,10 +77,10 @@ const Login = () => {
             </button>
 
             <div className="flex gap-2 mt-4 text-sm text-text">
-              <p className="text-sm">New on our platform?</p>
+              <p className="text-xs md:text-sm">New on our platform?</p>
               <Link
                 href="/signup"
-                className="text-secondary font-medium text-sm"
+                className="text-secondary font-medium text-xs md:text-sm"
               >
                 Create an account
               </Link>

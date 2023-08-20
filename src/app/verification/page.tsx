@@ -10,8 +10,8 @@ const Verification = () => {
       </div>
 
       <div className="w-full lg:w-1/2 flex justify-center items-center ">
-        <div className="lg:p-6 py-20 px-10 md:w-3/5 w-11/12 bg-white ">
-          <h1 className="text-2xl font-semibold mb-1 flex items-center gap-2 text-primary">
+        <div className="p-4 md:p-6 md:w-3/5 w-11/12 bg-white ">
+          <h1 className="text-lg md:text-2xl font-semibold mb-1 flex items-center gap-2 text-primary">
             Two-Step Verification <AiFillMessage />
           </h1>
           <p className="text-dark_text leading-6 text-base">

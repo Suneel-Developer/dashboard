@@ -11,8 +11,8 @@ const Forgotpassword = () => {
       </div>
 
       <div className="w-full lg:w-1/2 flex justify-center items-center">
-        <div className="lg:p-6 py-20 px-10 md:w-3/5 w-11/12 bg-white">
-          <h1 className="text-2xl font-semibold mb-4 flex items-center gap-2 text-primary">Forgot Password? <FcLock /> </h1>
+        <div className="p-4 md:p-6 md:w-3/5 w-11/12 bg-white">
+          <h1 className="text-lg md:text-2xl font-semibold mb-4 flex items-center gap-2 text-primary">Forgot Password? <FcLock /> </h1>
           <p className="text-primary font-medium text-sm mb-6">
             Enter your email, and we'll send you instructions to reset your
             password

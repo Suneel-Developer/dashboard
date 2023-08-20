@@ -8,14 +8,14 @@ interface Personal {
 
 const Step03: React.FC<Personal> = ({ onNext, onPrevious }) => {
   return (
-    <div className="p-6 md:w-4/5 w-11/12">
-      <h1 className="text-2xl font-semibold mb-1 text-primary" >Personal Information</h1>
+    <div className="p-0 md:p-6 md:w-4/5 w-11/12">
+      <h1 className="text-lg md:text-2xl font-semibold mb-1 text-primary" >Personal Information</h1>
       <p className="text-dark_text font-normal text-sm mb-6">
         Enter Your Personal Information
       </p>
       <form action="#">
-        <div className="flex gap-2">
-          <div className="mb-2 w-2/4">
+        <div className="flex flex-col md:flex-row gap-2">
+          <div className="mb-2 w-full md:w-2/4">
             <label
               htmlFor="firstname"
               className="block text-sm font-medium text-primary"
@@ -30,7 +30,7 @@ const Step03: React.FC<Personal> = ({ onNext, onPrevious }) => {
               className="mt-1 p-2 w-full border rounded-md "
             />
           </div>
-          <div className="mb-2 w-2/4">
+          <div className="mb-2w-full md:w-2/4">
             <label
               htmlFor="lasttname"
               className="block text-sm font-medium text-primary"
@@ -47,8 +47,8 @@ const Step03: React.FC<Personal> = ({ onNext, onPrevious }) => {
           </div>
         </div>
 
-        <div className="flex gap-2">
-          <div className="mb-2 w-2/4">
+        <div className="flex flex-col md:flex-row gap-2">
+          <div className="mb-2 w-full md:w-2/4">
             <label
               htmlFor="mobile"
               className="block text-sm fofont-medium text-primary"
@@ -63,7 +63,7 @@ const Step03: React.FC<Personal> = ({ onNext, onPrevious }) => {
               className="mt-1 p-2 w-full border rounded-md "
             />
           </div>
-          <div className="mb-2 w-2/4">
+          <div className="mb-2 w-full md:w-2/4">
             <label
               htmlFor="code"
               className="block text-smfont-medium text-primary"
@@ -112,8 +112,8 @@ const Step03: React.FC<Personal> = ({ onNext, onPrevious }) => {
           />
         </div>
 
-        <div className="flex gap-2">
-          <div className="mb-2 w-2/4">
+        <div className="flex flex-col md:flex-row gap-2">
+          <div className="mb-2 w-full md:w-2/4">
             <label
               htmlFor="city"
               className="block text-sm font-medium text-primary"
@@ -128,7 +128,7 @@ const Step03: React.FC<Personal> = ({ onNext, onPrevious }) => {
               className="mt-1 p-2 w-full border rounded-md "
             />
           </div>
-          <div className="mb-2 w-2/4">
+          <div className="mb-2 w-full md:w-2/4">
             <label
               htmlFor="country"
               className="block text-sm font-medium text-primary"

@@ -8,13 +8,13 @@ interface Billing {
 
 const Step04: React.FC<Billing> = ({ onFinish, onPrevious }) => {
   return (
-    <div className="p-6 md:w-4/5 w-11/12">
-      <h1 className="text-2xl font-semibold text-primary">Select Plan</h1>
+    <div className="p-0 lg:p-6 md:w-4/5 w-11/12">
+      <h1 className="text-lg md:text-2xl font-semibold text-primary">Select Plan</h1>
       <p className="text-dark_text font-normal text-sm mb-2">
         Select plan as per your requirement
       </p>
 
-      <div className="flex justify-between gap-2 my-3 ">
+      <div className="flex justify-between flex-col md:flex-row gap-2 my-3 ">
         <div className=" border border-secondary rounded text-center p-3">
           <h2 className="text-xl font-semibold text-primary">Basic</h2>
           <p className="font-normal text-sm leading-6 text-dark_text">
@@ -74,7 +74,7 @@ const Step04: React.FC<Billing> = ({ onFinish, onPrevious }) => {
         </div>
       </div>
 
-      <h1 className="text-2xl font-semibold mb-1 mt-2 text-primary">Payment Information</h1>
+      <h1 className="text-lg md:text-2xl font-semibold mb-1 mt-2 text-primary">Payment Information</h1>
       <p className="text-dark_text font-normal text-sm mb-6">
         Enter your card information
       </p>
@@ -96,8 +96,8 @@ const Step04: React.FC<Billing> = ({ onFinish, onPrevious }) => {
           />
         </div>
 
-        <div className="flex gap-2">
-          <div className="mb-2 w-2/4">
+        <div className="flex gap-2 flex-col md:flex-row">
+          <div className="mb-2 w-full md:w-2/4">
             <label
               htmlFor="name"
               className="block text-sm font-medium text-primary"
@@ -112,7 +112,7 @@ const Step04: React.FC<Billing> = ({ onFinish, onPrevious }) => {
               className="mt-1 p-2 w-full border rounded-md "
             />
           </div>
-          <div className="flex gap-2 mb-2 w-2/4">
+          <div className="flex gap-2 mb-2 w-full md:w-2/4 ">
             <div className="w-2/4">
               <label
                 htmlFor="expiry date"

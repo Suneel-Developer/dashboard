@@ -9,8 +9,8 @@ interface Account {
 
 const Step01: React.FC<Account> = ({ onNext }) => {
   return (
-    <div className="p-6 md:w-3/5 w-11/12">
-      <h1 className="text-2xl font-semibold mb-4 text-primary">Adventure starts here 🚀</h1>
+    <div className="p-0 lg:p-6 md:w-3/5 w-11/12">
+      <h1 className="text-lg md:text-2xl font-semibold mb-4 text-primary">Adventure starts here 🚀</h1>
       <p className="text-dark_text font-normal text-sm mb-6">
         Make your app management easy and fun!
       </p>

@@ -11,7 +11,7 @@ const Login = () => {
       </div>
 
       <div className="w-full lg:w-1/2 flex justify-center items-center">
-        <div className="lg:p-6 py-20 px-10 w-3/5 bg-white">
+        <div className="lg:p-6 py-20 px-10 md:w-3/5 w-11/12 bg-white">
           <h1 className="text-2xl font-semibold mb-4">
             Welcome to Octopus! 👋
           </h1>
@@ -22,7 +22,7 @@ const Login = () => {
             <div className="mb-4">
               <label
                 htmlFor="email"
-                className="block text-sm font-normal text-text"
+                className="block text-sm font-medium text-grey_text"
               >
                 Email or Username
               </label>
@@ -38,7 +38,7 @@ const Login = () => {
               <div className="flex justify-between">
                 <label
                   htmlFor="password"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-sm font-medium text-grey_text"
                 >
                   Password
                 </label>
@@ -62,16 +62,16 @@ const Login = () => {
                 type="checkbox"
                 name="checkbox"
                 id="checkbox"
-                className="mr-2 border rounded focus:ring focus:ring-indigo-200"
+                className="mr-2 border rounded "
               />
-              <label htmlFor="checkbox" className="text-sm text-gray-700">
+              <label htmlFor="checkbox"  className="text-sm text-gray-700">
                 Remember me
               </label>
             </div>
 
             <button
               type="submit"
-              className="w-full bg-secondary text-white py-3 shadow-md rounded-md "
+              className="w-full bg-secondary tracking-[0.43px] text-white py-3 shadow-md rounded-md "
             >
               Sign in
             </button>

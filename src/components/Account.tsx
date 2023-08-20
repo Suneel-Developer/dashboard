@@ -9,14 +9,14 @@ interface Account {
 
 const Step01: React.FC<Account> = ({ onNext }) => {
   return (
-    <div className="p-6 w-3/5">
-      <h1 className="text-2xl font-semibold mb-4">Adventure starts here 🚀</h1>
-      <p className="text-text font-normal text-sm mb-6">
+    <div className="p-6 md:w-3/5 w-11/12">
+      <h1 className="text-2xl font-semibold mb-4 text-primary">Adventure starts here 🚀</h1>
+      <p className="text-dark_text font-normal text-sm mb-6">
         Make your app management easy and fun!
       </p>
       <form action="#">
         <div className="mb-2">
-          <label htmlFor="name" className="block text-sm font-normal text-text">
+          <label htmlFor="name" className="block text-sm font-medium text-primary">
             Username
           </label>
           <input
@@ -31,7 +31,7 @@ const Step01: React.FC<Account> = ({ onNext }) => {
         <div className="mb-2">
           <label
             htmlFor="email"
-            className="block text-sm font-medium text-gray-700"
+            className="block text-sm font-medium text-primary"
           >
             Email
           </label>
@@ -47,7 +47,7 @@ const Step01: React.FC<Account> = ({ onNext }) => {
         <div className="mb-2">
           <label
             htmlFor="password"
-            className="block text-sm font-medium text-gray-700"
+            className="block text-sm font-medium text-primary"
           >
             Password
           </label>
@@ -65,9 +65,9 @@ const Step01: React.FC<Account> = ({ onNext }) => {
             type="checkbox"
             name="checkbox"
             id="checkbox"
-            className="mr-2 border rounded focus:ring focus:ring-indigo-200"
+            className="mr-2 border "
           />
-          <label htmlFor="checkbox" className="text-sm text-gray-700">
+          <label htmlFor="checkbox" className="text-sm text-dark_text">
             I agree to
             <Link href="#" className=" text-secondary ml-1 ">
               privacy policy & terms
@@ -78,12 +78,12 @@ const Step01: React.FC<Account> = ({ onNext }) => {
         <button
           type="submit"
           onClick={onNext}
-          className="w-full bg-secondary text-white py-3 shadow-md rounded-md "
+          className="w-full bg-secondary text-white py-3 shadow-md rounded-md tracking-[0.43px]"
         >
           Sign up
         </button>
 
-        <div className="flex gap-2 mt-4 text-sm text-text">
+        <div className="flex gap-2 mt-4 text-sm text-dark_text">
           <p className="text-sm">Already have an account? </p>
           <Link href="/login" className="text-secondary font-medium text-sm">
             Sign in instead
@@ -92,7 +92,7 @@ const Step01: React.FC<Account> = ({ onNext }) => {
       </form>
 
       <div className="flex flex-col justify-center items-center mt-3">
-        <p className="text-center p-2 text-sm -mb-5 z-10 bg-white">OR</p>
+        <p className="text-center p-2 text-sm -mb-5 z-10 bg-white text-text">or</p>
         <hr className="w-full border-t-2" />
       </div>
 

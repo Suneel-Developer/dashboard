@@ -23,7 +23,8 @@ module.exports = {
         dark_red: "#DB4437",
         dark_grey: "#4267B2",
         success: "#28C76F",
-        dark_text: "#878C9B80"
+        dark_text: "#878C9B80",
+        grey_text: "#242745"
       },
     },
   },

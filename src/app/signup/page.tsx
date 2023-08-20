@@ -3,7 +3,8 @@ import Image from "next/image";
 import { RiHome6Line } from "react-icons/ri";
 import { AiOutlineMail } from "react-icons/ai";
 import { FiUsers } from "react-icons/fi";
-import { GrDocumentText } from "react-icons/gr";
+import {BiChevronRight} from "react-icons/bi"
+import { CgFileDocument } from "react-icons/cg";
 import React, { useState } from "react";
 import Account from "../../components/Account";
 import Verification from "../../components/Verification";
@@ -37,12 +38,12 @@ const Signup: React.FC = () => {
   };
 
   return (
-    <section className="flex h-screen bg-[url('/assets/login.webp')] bg-cover	bg-no-repeat bg-center lg:bg-none">
+    <section className="flex justify-start h-screen bg-[url('/assets/login.webp')] bg-cover	bg-no-repeat bg-center lg:bg-none">
       <div className="w-0 lg:w-2/5 h-auto relative">
         <Image src="/assets/account.webp" alt="Account Image" layout="fill" />
       </div>
 
-      <div className="w-11/12 m-auto	lg:w-3/5 flex justify-center p-10 flex-col bg-white">
+      <div className="w-11/12 mt-5	lg:w-3/5 flex justify-start p-10 flex-col bg-white">
         <div className="flex justify-between flex-row w-100 items-center mb-4">
           <div className="flex gap-2 items-center cursor-pointer ">
             <button
@@ -63,12 +64,13 @@ const Signup: React.FC = () => {
           </div>
 
           <div className="flex gap-2 items-center cursor-pointer ">
+            <BiChevronRight className="text-2xl text-text " />
             <button
               className={`flex items-center justify-center border w-12 h-12 rounded-lg ${
                 currentStep === Steps.Verification ||
                 completedSteps.has(Steps.Verification)
                   ? "bg-secondary text-white"
-                  : "bg-grey"
+                  : "bg-grey text-text"
               }`}
               disabled={currentStep === Steps.Verification}
             >
@@ -83,12 +85,13 @@ const Signup: React.FC = () => {
           </div>
 
           <div className="flex gap-2 items-center cursor-pointer ">
+          <BiChevronRight className="text-2xl text-text " />
             <button
               className={`flex items-center justify-center border w-12 h-12 rounded-lg ${
                 currentStep === Steps.Personal ||
                 completedSteps.has(Steps.Personal)
                   ? "bg-secondary text-white"
-                  : "bg-grey"
+                  : "bg-grey text-text"
               }`}
               disabled={currentStep === Steps.Personal}
             >
@@ -103,16 +106,17 @@ const Signup: React.FC = () => {
           </div>
 
           <div className="flex gap-2 items-center cursor-pointer ">
+          <BiChevronRight className="text-2xl text-text " />
             <button
               className={`flex items-center justify-center border w-12 h-12 rounded-lg ${
                 currentStep === Steps.Billing ||
                 completedSteps.has(Steps.Billing)
                   ? "bg-secondary text-white"
-                  : "bg-grey"
+                  : "bg-grey text-text"
               }`}
               disabled={currentStep === Steps.Billing}
             >
-              <GrDocumentText className="text-2xl" />
+              <CgFileDocument className="text-2xl" />
             </button>
             <div>
               <h3 className="font-bold text-primary text-md">Billing</h3>

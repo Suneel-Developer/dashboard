@@ -8,9 +8,9 @@ interface Personal {
 
 const Step03: React.FC<Personal> = ({ onNext, onPrevious }) => {
   return (
-    <div className="p-6 w-4/5">
-      <h1 className="text-2xl font-semibold mb-4">Personal Information</h1>
-      <p className="text-text font-normal text-sm mb-6">
+    <div className="p-6 md:w-4/5 w-11/12">
+      <h1 className="text-2xl font-semibold mb-1 text-primary" >Personal Information</h1>
+      <p className="text-dark_text font-normal text-sm mb-6">
         Enter Your Personal Information
       </p>
       <form action="#">
@@ -18,7 +18,7 @@ const Step03: React.FC<Personal> = ({ onNext, onPrevious }) => {
           <div className="mb-2 w-2/4">
             <label
               htmlFor="firstname"
-              className="block text-sm font-normal text-text"
+              className="block text-sm font-medium text-primary"
             >
               First Name
             </label>
@@ -33,7 +33,7 @@ const Step03: React.FC<Personal> = ({ onNext, onPrevious }) => {
           <div className="mb-2 w-2/4">
             <label
               htmlFor="lasttname"
-              className="block text-sm font-normal text-text"
+              className="block text-sm font-medium text-primary"
             >
               Last Name
             </label>
@@ -51,7 +51,7 @@ const Step03: React.FC<Personal> = ({ onNext, onPrevious }) => {
           <div className="mb-2 w-2/4">
             <label
               htmlFor="mobile"
-              className="block text-sm font-normal text-text"
+              className="block text-sm fofont-medium text-primary"
             >
               Mobile
             </label>
@@ -66,7 +66,7 @@ const Step03: React.FC<Personal> = ({ onNext, onPrevious }) => {
           <div className="mb-2 w-2/4">
             <label
               htmlFor="code"
-              className="block text-sm font-normal text-text"
+              className="block text-smfont-medium text-primary"
             >
               Pin Code
             </label>
@@ -83,7 +83,7 @@ const Step03: React.FC<Personal> = ({ onNext, onPrevious }) => {
         <div className="mb-2">
           <label
             htmlFor="address"
-            className="block text-sm font-medium text-gray-700"
+            className="block text-sm font-medium text-primary"
           >
             Address
           </label>
@@ -99,7 +99,7 @@ const Step03: React.FC<Personal> = ({ onNext, onPrevious }) => {
         <div className="mb-2">
           <label
             htmlFor="landmark"
-            className="block text-sm font-medium text-gray-700"
+            className="block text-sm font-medium text-primary"
           >
             Landmark
           </label>
@@ -116,7 +116,7 @@ const Step03: React.FC<Personal> = ({ onNext, onPrevious }) => {
           <div className="mb-2 w-2/4">
             <label
               htmlFor="city"
-              className="block text-sm font-normal text-text"
+              className="block text-sm font-medium text-primary"
             >
               City
             </label>
@@ -131,7 +131,7 @@ const Step03: React.FC<Personal> = ({ onNext, onPrevious }) => {
           <div className="mb-2 w-2/4">
             <label
               htmlFor="country"
-              className="block text-sm font-normal text-text"
+              className="block text-sm font-medium text-primary"
             >
               Country
             </label>
@@ -149,14 +149,14 @@ const Step03: React.FC<Personal> = ({ onNext, onPrevious }) => {
           <button
             type="submit"
             onClick={onPrevious}
-            className=" flex justify-center items-center gap-3 w-40 bg-light_red text-dark_red font-normal py-3 shadow-md rounded-md "
+            className=" flex justify-center items-center gap-3 w-32 bg-light_red text-dark_red font-normal py-3 shadow-md rounded-md tracking-[0.43px] "
           >
             <BsArrowLeft className=" text-lg font-bold " /> Previous
           </button>
           <button
             type="submit"
             onClick={onNext}
-            className=" flex justify-center items-center gap-3 w-40 bg-secondary text-white font-normal py-3 rounded-md "
+            className=" flex justify-center items-center gap-3 w-24 bg-secondary text-white font-normal py-3 rounded-md tracking-[0.43px]"
           >
             Next <BsArrowRight className=" text-lg font-bold " />
           </button>

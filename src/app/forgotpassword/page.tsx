@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BiChevronLeft } from "react-icons/bi";
+import {FcLock} from "react-icons/fc"
 
 const Forgotpassword = () => {
   return (
@@ -10,9 +11,9 @@ const Forgotpassword = () => {
       </div>
 
       <div className="w-full lg:w-1/2 flex justify-center items-center">
-        <div className="lg:p-6 py-20 px-10 w-3/5 bg-white">
-          <h1 className="text-2xl font-semibold mb-4">Forgot Password? 🔒</h1>
-          <p className="text-text font-normal text-sm mb-6">
+        <div className="lg:p-6 py-20 px-10 md:w-3/5 w-11/12 bg-white">
+          <h1 className="text-2xl font-semibold mb-4 flex items-center gap-2 text-primary">Forgot Password? <FcLock /> </h1>
+          <p className="text-primary font-medium text-sm mb-6">
             Enter your email, and we'll send you instructions to reset your
             password
           </p>
@@ -20,7 +21,7 @@ const Forgotpassword = () => {
             <div className="mb-4">
               <label
                 htmlFor="email"
-                className="block text-sm font-normal text-text"
+                className="block text-sm font-medium text-primary"
               >
                 Email
               </label>
@@ -33,18 +34,20 @@ const Forgotpassword = () => {
               />
             </div>
 
-            <button
-              type="submit"
-              className="w-full bg-secondary text-white py-3 shadow-md rounded-md "
-            >
-              Send Reset Link
-            </button>
+            <Link href="/verification">
+              <button
+                type="submit"
+                className="w-full bg-secondary text-white py-3 shadow-md rounded-md tracking-[0.43px] "
+              >
+                Send Reset Link
+              </button>
+            </Link>
 
             <Link
               href="/login"
               className=" flex gap-1 items-center justify-center mt-3 text-secondary font-medium text-sm"
             >
-              <BiChevronLeft className="text-xl" /> Back to log in
+              <BiChevronLeft className="text-2xl" /> Back to log in
             </Link>
           </form>
         </div>

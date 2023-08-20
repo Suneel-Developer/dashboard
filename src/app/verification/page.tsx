@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { AiFillMessage } from "react-icons/ai";
 
 const Verification = () => {
   return (
@@ -9,9 +10,9 @@ const Verification = () => {
       </div>
 
       <div className="w-full lg:w-1/2 flex justify-center items-center ">
-        <div className="lg:p-6 py-20 px-10 w-3/5 bg-white ">
-          <h1 className="text-2xl font-semibold mb-1">
-            Two-Step Verification 💬
+        <div className="lg:p-6 py-20 px-10 md:w-3/5 w-11/12 bg-white ">
+          <h1 className="text-2xl font-semibold mb-1 flex items-center gap-2 text-primary">
+            Two-Step Verification <AiFillMessage />
           </h1>
           <p className="text-dark_text leading-6 text-base">
             We sent a verification code to your mobile. Enter the code from the
@@ -22,7 +23,7 @@ const Verification = () => {
             <div className="mb-4">
               <label
                 htmlFor="verificationCode"
-                className="block text-sm font-normal text-text"
+                className="block text-sm font-normal text-dark_text"
               >
                 Type your 6 digit security code
               </label>
@@ -67,18 +68,20 @@ const Verification = () => {
               </div>
             </div>
 
-            <button
-              type="submit"
-              className="w-full bg-secondary text-white py-3 shadow-md rounded-md "
-            >
-              Verify my account
-            </button>
+            <Link href="/resetpassword">
+              <button
+                type="submit"
+                className="w-full bg-secondary text-white py-3 shadow-md rounded-md tracking-[0.43px] "
+              >
+                Verify my account
+              </button>
+            </Link>
 
-            <div className="flex gap-2 mt-4 text-sm justify-center text-text">
+            <div className="flex gap-2 mt-4 text-sm justify-center text-dark_text">
               <p className="text-sm">Didn't get the code? </p>
               <Link
                 href="/signup"
-                className="text-secondary font-medium text-sm"
+                className="text-secondary font-medium text-sm "
               >
                 Resend
               </Link>

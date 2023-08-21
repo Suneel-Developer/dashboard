@@ -82,32 +82,32 @@ const Step03: React.FC<Contact> = ({ onNext, onPrevious }) => {
 
         <div className="mb-2">
           <label
-            htmlFor="mobilecode"
+            htmlFor="areacode"
             className="block text-sm font-medium text-gray-700"
           >
-            Area code / Mobile
+            Area code  
           </label>
           <input
             type="text"
-            name="mobilecode"
-            placeholder="Area code / Mobile"
-            id="mobilecode"
+            name="areacode"
+            placeholder="Area code"
+            id="areacode"
             className="mt-1 p-2 w-full border rounded-md "
           />
         </div>
 
         <div className="mb-2">
           <label
-            htmlFor="faxcode"
+            htmlFor="mobile"
             className="block text-sm font-medium text-gray-700"
           >
-            Area code / Fax
+            Mobile / Fax
           </label>
           <input
             type="text"
-            name="faxcode"
-            placeholder="Area code / Fax"
-            id="faxcode"
+            name="mobile"
+            placeholder="Mobile / Fax"
+            id="mobile"
             className="mt-1 p-2 w-full border rounded-md "
           />
         </div>

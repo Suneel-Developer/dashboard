@@ -13,51 +13,36 @@ const Step01: React.FC<SystemDevelopment> = ({ onNext }) => {
 
       <form action="#">
         <div>
-          <label
-            htmlFor="cloud sass"
-            className="block text-lg font-medium mb-2 text-primary"
-          >
-            Cloud SaaS
-          </label>
-          <div className="flex gap-5 ">
-            <label htmlFor="azure" className="flex items-center space-x-2">
-              <input
-                checked
-                type="radio"
-                id="azure"
-                name="option1"
-                className="w-5 h-5"
-              />
-              <span className=" font-medium text-sm text-primary">Azure</span>
+          <div className="mb-2">
+            <label
+              htmlFor="saas"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Cloud SaaS
             </label>
-            <label htmlFor="aws" className="flex items-center space-x-2">
-              <input type="radio" id="aws" name="option1" className="w-5 h-5" />
-              <span className=" font-medium text-sm text-primary">AWS</span>
-            </label>
+            <input
+              type="text"
+              name="saas"
+              placeholder="Cloud SaaS"
+              id="saas"
+              className="mt-1 p-2 w-full border rounded-md "
+            />
           </div>
-        </div>
-        <div className="my-5">
-          <label
-            htmlFor="on premises"
-            className="block text-lg font-medium mb-2 text-primary"
-          >
-            On-premises
-          </label>
-          <div className="flex gap-5 ">
-            <label htmlFor="local active directory" className="flex items-center space-x-2">
-              <input
-                checked
-                type="radio"
-                name="option2"
-                className="w-5 h-5"
-          
-              />
-              <span className=" font-medium text-sm text-primary">Local Active Directory</span>
+
+          <div className="mb-2">
+            <label
+              htmlFor="premises"
+              className="block text-sm font-medium text-gray-700"
+            >
+              On-premises
             </label>
-            <label htmlFor="database" className="flex items-center space-x-2">
-              <input type="radio" name="option2" className="w-5 h-5" />
-              <span className=" font-medium text-sm text-primary">Database</span>
-            </label>
+            <input
+              type="text"
+              name="premises"
+              placeholder="On-premises"
+              id="premises"
+              className="mt-1 p-2 w-full border rounded-md "
+            />
           </div>
         </div>
       </form>

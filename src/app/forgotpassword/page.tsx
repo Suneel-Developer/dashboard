@@ -6,7 +6,7 @@ import Link from "next/link";
 import { BiChevronLeft } from "react-icons/bi";
 import { useRouter } from 'next/navigation';
 
-const Forgotpassword: React.FC<> = () => {
+const Forgotpassword: React.FC = () => {
   const [authMethod, setAuthMethod] = useState<string>("email");
   const [inputEmail, setInputEmail] = useState<string>("");
   const [inputPhone, setInputPhone] = useState<string>("");

@@ -6,16 +6,10 @@ import Link from "next/link";
 import { BiChevronLeft } from "react-icons/bi";
 import { useRouter } from 'next/navigation';
 
-interface ForgotProps {
-  method: string;
-  email: string;
-  phone: string;
-}
-
-const Forgotpassword: React.FC<ForgotProps> = ({ method, email: propEmail, phone: propPhone }) => {
+const Forgotpassword: React.FC<> = () => {
   const [authMethod, setAuthMethod] = useState<string>("email");
-  const [inputEmail, setInputEmail] = useState<string>(propEmail);
-  const [inputPhone, setInputPhone] = useState<string>(propPhone);
+  const [inputEmail, setInputEmail] = useState<string>("");
+  const [inputPhone, setInputPhone] = useState<string>("");
 
   const router = useRouter();
 

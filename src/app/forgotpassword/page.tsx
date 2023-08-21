@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BiChevronLeft } from "react-icons/bi";
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 
 interface ForgotProps {
   method: string;
@@ -12,7 +12,7 @@ interface ForgotProps {
   phone: string;
 }
 
-const Forgotpassword: React.FC<ForgotProps> = ({ email: propEmail, phone: propPhone }) => {
+const Forgotpassword: React.FC<ForgotProps> = ({ method, email: propEmail, phone: propPhone }) => {
   const [authMethod, setAuthMethod] = useState<string>("email");
   const [inputEmail, setInputEmail] = useState<string>(propEmail);
   const [inputPhone, setInputPhone] = useState<string>(propPhone);

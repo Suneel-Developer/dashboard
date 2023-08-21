@@ -1,8 +1,16 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
-import { AiFillMessage } from "react-icons/ai";
+import { useRouter } from 'next/navigation';
 
-const Verification = () => {
+const Verification: React.FC = () => {
+  const router = useRouter(); 
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    router.push('/resetpassword');
+  };
+
   return (
     <section className="flex h-screen bg-[url('/assets/login.webp')] bg-cover	bg-no-repeat bg-center lg:bg-none">
       <div className="w-0 lg:w-1/2 h-auto relative">
@@ -10,20 +18,20 @@ const Verification = () => {
       </div>
 
       <div className="w-full lg:w-1/2 flex justify-center items-center ">
-        <div className="p-4 md:p-6 md:w-3/5 w-11/12 bg-white ">
-          <h1 className="text-lg md:text-2xl font-semibold mb-1 flex items-center gap-2 text-primary">
-            Two-Step Verification <AiFillMessage />
+        <div className="p-4 md:p-6 md:w-3/5 w-11/12 bg-white">
+          <h1 className="text-2xl font-semibold mb-1">
+            Two-Step Verification 💬
           </h1>
           <p className="text-dark_text leading-6 text-base">
             We sent a verification code to your mobile. Enter the code from the
             mobile in the field below.
           </p>
           <p className="text-text font-bold text-sm mb-6">******9763</p>
-          <form action="#">
+          <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label
                 htmlFor="verificationCode"
-                className="block text-sm font-normal text-dark_text"
+                className="block text-sm font-normal text-text"
               >
                 Type your 6 digit security code
               </label>
@@ -68,23 +76,21 @@ const Verification = () => {
               </div>
             </div>
 
-            <Link href="/resetpassword">
-              <button
-                type="submit"
-                className="w-full bg-secondary text-white py-3 shadow-md rounded-md tracking-[0.43px] "
-              >
-                Verify my account
-              </button>
-            </Link>
+            <button
+              type="submit"
+              className="w-full bg-secondary text-white py-3 shadow-md rounded-md "
+            >
+              Verify my account
+            </button>
 
-            <div className="flex gap-2 mt-4 text-sm justify-center text-dark_text">
+            <div className="flex gap-2 mt-4 text-sm justify-center text-text">
               <p className="text-sm">Didn't get the code? </p>
-              <Link
-                href="/signup"
-                className="text-secondary font-medium text-sm "
+              <button
+              type="button"
+                className="text-secondary font-medium text-sm"
               >
                 Resend
-              </Link>
+              </button>
             </div>
           </form>
         </div>

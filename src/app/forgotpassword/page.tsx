@@ -1,10 +1,10 @@
 "use client"; // I'm assuming this is a typo and should be "use strict";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BiChevronLeft } from "react-icons/bi";
-import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/router';
 
 interface ForgotProps {
   method: string;

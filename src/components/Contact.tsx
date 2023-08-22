@@ -47,8 +47,8 @@ const Step03: React.FC<Contact> = ({ onNext, onPrevious }) => {
           </div>
         </div>
 
-        <div className="flex gap-2 flex-col md:flex-row">
-          <div className="mb-2 w-full md:w-2/4">
+       
+          <div className="mb-2">
             <label
               htmlFor="jobtitle"
               className="block text-sm font-normal text-text"
@@ -63,54 +63,109 @@ const Step03: React.FC<Contact> = ({ onNext, onPrevious }) => {
               className="mt-1 p-2 w-full border rounded-md "
             />
           </div>
-          <div className="mb-2 w-full md:w-2/4">
-            <label
-              htmlFor="area"
-              className="block text-sm font-normal text-text"
-            >
-            Area code / Primary Number
-            </label>
-            <input
-              type="text"
-              name="area"
-              id="area"
-              placeholder="Area code / Primary Number"
-              className="mt-1 p-2 w-full border rounded-md "
-            />
-          </div>
-        </div>
+        
 
-        <div className="mb-2">
-          <label
-            htmlFor="areacode"
-            className="block text-sm font-medium text-gray-700"
-          >
-            Area code  
-          </label>
-          <input
-            type="text"
-            name="areacode"
-            placeholder="Area code"
-            id="areacode"
-            className="mt-1 p-2 w-full border rounded-md "
-          />
-        </div>
+          <div className="flex gap-2 mb-2">
 
-        <div className="mb-2">
-          <label
-            htmlFor="mobile"
-            className="block text-sm font-medium text-gray-700"
-          >
-            Mobile / Fax
-          </label>
-          <input
-            type="text"
-            name="mobile"
-            placeholder="Mobile / Fax"
-            id="mobile"
-            className="mt-1 p-2 w-full border rounded-md "
-          />
-        </div>
+<div className="w-1/6">
+   <label
+     htmlFor="Code"
+     className="block text-sm font-medium text-gray-700"
+   >
+    Area Code
+   </label>
+   <input
+     type="text"
+     name="Code"
+     placeholder="Code"
+     id="Code"
+     className="mt-1 p-2 w-full border rounded-md "
+   />
+ </div>
+ <div className="w-5/6">
+   <label
+     htmlFor="mobile"
+     className="block text-sm font-medium text-gray-700"
+   >
+     Primary number
+   </label>
+   <input
+     type="text"
+     name="mobile"
+     placeholder="Primary number"
+     id="mobile"
+     className="mt-1 p-2 w-full border rounded-md "
+   />
+ </div>
+ </div>
+ <div className="flex gap-2 mb-2">
+
+<div className="w-1/6">
+   <label
+     htmlFor="Code"
+     className="block text-sm font-medium text-gray-700"
+   >
+    Area Code
+   </label>
+   <input
+     type="text"
+     name="Code"
+     placeholder="Code"
+     id="Code"
+     className="mt-1 p-2 w-full border rounded-md "
+   />
+ </div>
+ <div className="w-5/6">
+   <label
+     htmlFor="mobile"
+     className="block text-sm font-medium text-gray-700"
+   >
+     Mobile
+   </label>
+   <input
+     type="text"
+     name="mobile"
+     placeholder="Mobile / Fax"
+     id="mobile"
+     className="mt-1 p-2 w-full border rounded-md "
+   />
+ </div>
+ </div>
+ <div className="flex gap-2 mb-2">
+
+<div className="w-1/6">
+   <label
+     htmlFor="Code"
+     className="block text-sm font-medium text-gray-700"
+   >
+    Area Code
+   </label>
+   <input
+     type="text"
+     name="Code"
+     placeholder="Code"
+     id="Code"
+     className="mt-1 p-2 w-full border rounded-md "
+   />
+ </div>
+ <div className="w-5/6">
+   <label
+     htmlFor="fax"
+     className="block text-sm font-medium text-gray-700"
+   >
+     Fax
+   </label>
+   <input
+     type="text"
+     name="fax"
+     placeholder="Fax"
+     id="fax"
+     className="mt-1 p-2 w-full border rounded-md "
+   />
+ </div>
+ </div>
+
+     
 
           <div className="mb-2">
             <label

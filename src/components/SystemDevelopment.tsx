@@ -13,36 +13,68 @@ const Step01: React.FC<SystemDevelopment> = ({ onNext }) => {
 
       <form action="#">
         <div>
-          <div className="mb-2">
-            <label
-              htmlFor="saas"
-              className="block text-sm font-medium text-gray-700"
-            >
-              Cloud SaaS
-            </label>
-            <input
-              type="text"
-              name="saas"
-              placeholder="Cloud SaaS"
-              id="saas"
-              className="mt-1 p-2 w-full border rounded-md "
-            />
-          </div>
+          <label
+            htmlFor="cloud sass"
+            className="block text-lg font-medium mb-2 text-primary"
+          >
+            Cloud SaaS
+          </label>
+          <div className="flex gap-5 ">
+            <label htmlFor="azure" className="flex items-center space-x-2">
+              <input
+                id="default-checkbox"
+                type="checkbox"
+                value=""
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
 
-          <div className="mb-2">
-            <label
-              htmlFor="premises"
-              className="block text-sm font-medium text-gray-700"
-            >
-              On-premises
+              <span className=" font-medium text-sm text-primary">Azure</span>
             </label>
-            <input
-              type="text"
-              name="premises"
-              placeholder="On-premises"
-              id="premises"
-              className="mt-1 p-2 w-full border rounded-md "
-            />
+            <label htmlFor="aws" className="flex items-center space-x-2">
+              <input
+                id="default-checkbox"
+                type="checkbox"
+                value=""
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+              <span className=" font-medium text-sm text-primary">AWS</span>
+            </label>
+          </div>
+        </div>
+        <div className="my-5">
+          <label
+            htmlFor="on premises"
+            className="block text-lg font-medium mb-2 text-primary"
+          >
+            On-premises
+          </label>
+          <div className="flex gap-5 ">
+            <label
+              htmlFor="local active directory"
+              className="flex items-center space-x-2"
+            >
+              <input
+                id="default-checkbox"
+                type="checkbox"
+                value=""
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+
+              <span className=" font-medium text-sm text-primary">
+                Local Active Directory
+              </span>
+            </label>
+            <label htmlFor="database" className="flex items-center space-x-2">
+              <input
+                id="default-checkbox"
+                type="checkbox"
+                value=""
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+              <span className=" font-medium text-sm text-primary">
+                Database
+              </span>
+            </label>
           </div>
         </div>
       </form>
